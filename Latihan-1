@@ -1,7 +1,3 @@
-print("Nama: Sabrina Dwi Ajeng")
-print("Nim: 312510308")
-print("Kelas: TI.25 C5")
-
 import itertools
 # Definisi fungsi implikasi
 def implies(p, q):
