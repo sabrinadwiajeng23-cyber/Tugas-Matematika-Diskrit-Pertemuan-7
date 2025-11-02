@@ -1,5 +1,3 @@
-# Simulasi Tabel Kebenaran <br>
-
 import itertools
 # Definisi fungsi implikasi
 def implies(p, q):
