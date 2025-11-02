@@ -1,0 +1,21 @@
+# cek_tautologi.py
+# Program untuk memeriksa apakah (p ∧ q) → p adalah tautologi
+
+import itertools
+
+def implies(a, b):
+    """Fungsi implikasi: a → b setara dengan not a or b"""
+    return not a or b
+
+def check_tautology():
+    tautology = True
+    print("Truth table untuk (p ∧ q) → p:")
+    for p, q in itertools.product([True, False], repeat=2):
+        result = implies(p and q, p)
+        print(f"p={p}, q={q}, (p ∧ q) → p = {result}")
+        if not result:
+            tautology = False
+    print("\nKesimpulan:", "TAUTOLOGI" if tautology else "BUKAN tautologi")
+
+# Jalankan cek
+check_tautology()
